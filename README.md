@@ -1,17 +1,16 @@
 # Paradox Industries Website
 
-Single-page static launch site for `paradoxindustries.ca`.
+Premium single-page Next.js launch site for `paradoxindustries.ca`.
 
 ## Local development
 
 1. Run `npm install`
-2. Run `npm run build`
-
-The production-ready files are generated in `dist/`.
+2. Run `npm run dev`
+3. Run `npm run build` before deployment
 
 ## Deployment target
 
-This repository is configured for Vercel static hosting. `vercel.json` points Vercel at the generated `dist` directory.
+This repository is configured for Vercel with Next.js. Vercel will run `npm run build` and serve the Next application automatically.
 
 ## Contact form
 

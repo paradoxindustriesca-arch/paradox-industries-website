@@ -1,30 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,html}"],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
-        ink: "#0c0c0d",
-        graphite: "#121212",
-        mist: "#d6d8dd",
-        frost: "#eff3ff",
-        glow: "#8fffe1",
-        volt: "#71f3ff",
-        ember: "#ff9a66",
-        steel: "#25272b"
+        obsidian: "#0A0D14",
+        carbon: "#0E1118",
+        panel: "#111722",
+        stroke: "#273244",
+        muted: "#94A3B8",
+        frost: "#F9FAFB",
+        cyan: "#22D3EE",
+        emerald: "#34D399",
+        violet: "#8B5CF6"
       },
       fontFamily: {
-        display: ["'Space Grotesk'", "sans-serif"],
-        body: ["Sora", "sans-serif"]
+        sans: ["ui-sans-serif", "system-ui", "Segoe UI", "sans-serif"],
+        mono: ["ui-monospace", "SFMono-Regular", "Cascadia Code", "monospace"]
       },
       boxShadow: {
-        panel: "0 24px 80px rgba(0, 0, 0, 0.35)"
+        glow: "0 0 44px rgba(34, 211, 238, 0.18)",
+        emerald: "0 0 34px rgba(52, 211, 153, 0.16)"
       },
       backgroundImage: {
-        grid: "linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)"
+        "system-grid": "linear-gradient(rgba(249,250,251,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(249,250,251,0.08) 1px, transparent 1px)"
       }
     }
   },
   plugins: []
 };
-
